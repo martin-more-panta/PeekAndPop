@@ -22,7 +22,6 @@ public class HoldAndReleaseView {
     public HoldAndReleaseView(View view) {
         this.view = view;
         this.position = -1;
-        this.holdAndReleaseTimer = new Timer();
     }
 
     public void startHoldAndReleaseTimer(@NonNull final PeekAndPop peekAndPop, final int position, long duration) {
