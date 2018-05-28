@@ -742,8 +742,9 @@ public class PeekAndPop {
          * @param view
          */
         private void cancelPendingTimer(@NonNull final View view) {
-            if (longHoldTimer == null) return;
-            longHoldTimer.cancel();
+            if (longHoldTimer != null)
+                longHoldTimer.cancel();
+
             if (longHoldRunnable != null) {
                 longHoldRunnable = new Runnable() {
                     @Override
