@@ -74,7 +74,7 @@ public class PeekAndPop {
     protected OnHoldAndReleaseListener onHoldAndReleaseListener;
     protected GestureListener gestureListener;
     protected GestureDetector gestureDetector;
-    private Timer longHoldTimer = new Timer();
+    private Timer longHoldTimer;
 
     protected int orientation;
     protected float[] peekViewOriginalPosition;
